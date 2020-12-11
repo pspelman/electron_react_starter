@@ -1,0 +1,83 @@
+$white: #fff !default;
+$gray-100: #f8f9fc !default;
+$gray-200: #f4f4f4 !default;
+$gray-300: #dddfeb !default;
+$gray-400: #d1d3e2 !default;
+$gray-500: #b7b9cc !default;
+$gray-600: #858796 !default;
+$gray-700: #6e707e !default;
+$gray-800: #5a5c69 !default;
+$gray-900: #3a3b45 !default;
+$black: #000 !default;
+
+$blue: #4e73df !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #e74a3b !default;
+$orange: #fd7e14 !default;
+$yellow: #f6c23e !default;
+$green: #1cc88a !default;
+$teal: #20c9a6 !default;
+$cyan: #36b9cc !default;
+
+// Custom Colors
+$brand-google: #ea4335 !default;
+$brand-facebook: #3b5998 !default;
+
+
+.content-wrapper {
+  height: 100%;
+  background-color: $gray-200;
+  padding-top: 70px;
+  transition: background-color 1s;
+
+  &.dark {
+    background-color: $gray-900;
+    color: white;
+
+    .electron-app-container li .electron-app-text-wrapper {
+      background: #4d4d4d;
+    }
+
+    .electron-app-navbar, .electron-app-name-container {
+      border-bottom: 1px solid $gray-700;
+    }
+
+    .list-container {
+      border-right: 1px solid $gray-700;
+
+      .item {
+        border-bottom: 1px solid $gray-700;
+      }
+    }
+  }
+}
+
+.electron-app-navbar {
+  position: absolute;
+  padding: 16px;
+  top: 0;
+  border-bottom: 1px solid #e6ecf3;
+  width: 100%;
+
+  &-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-left {
+      display: flex;
+    }
+
+    &-right {
+      display: flex;
+    }
+
+    .logged-in-user {
+      display: flex;
+      align-self: center;
+      font-weight: bold;
+    }
+  }
+}

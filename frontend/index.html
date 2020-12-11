@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://localhost:8097"></script>  <!--    note: this is the line for the react devTools, needs to be running before launch  -->
+    <!--    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">-->
+    <!--    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">-->
+    <meta
+            http-equiv="Content-Security-Policy"
+            content="script-src 'self' 'unsafe-eval' https://*.firebaseio.com"/>
+
+    <!--    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' localhost:*">-->
+    <!--    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval'">-->
+    <title>Electron React App</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<main>
+    <div id="electronApp">
+    </div>
+</main>
+</body>
+<!--<script src="./src/js/index.js"></script>-->
+<script src="./build/js/app.js"></script>
+</html>
